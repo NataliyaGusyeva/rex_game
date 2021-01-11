@@ -4,7 +4,49 @@
     border-bottom: 1px solid black;
     margin: auto;
 }
-
 #dino {
-    height: ;
+    width: 70px;
+    height: 70px;
+    background-image: url(img/b_dino.png);
+    background-size: 70px 70px;
+    position: relative;
+    top: 70px;
+}
+#cactus {
+    width: 40px;
+    height: 60px;
+    background-image: url(img/e_cactus.png);
+    background-size: 40px 60px;
+    position: relative;
+    right: 580px;
+    top: 140px;
+    animation: cactusMov infinite 1s linear;
+}
+@keyframes cactusMov {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+.jump {
+    animation: jumpMov infinite 1s linear;
+}
+@keyframes jumpMov {
+    0% {
+        left: 140px;
+    }
+    30% {
+        left: 120px;
+    }
+    50% {
+        left: 70px;
+    }
+    80% {
+        left: 120px;
+    }
+    100% {
+        left: 140px;
+    }
 }
