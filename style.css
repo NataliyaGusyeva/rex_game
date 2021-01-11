@@ -31,9 +31,9 @@
     }
 }
 .jump {
-    animation: jumpMov infinite 1s linear;
+    animation: jump infinite 0.3s linear;
 }
-@keyframes jumpMov {
+@keyframes jump {
     0% {
         left: 140px;
     }
